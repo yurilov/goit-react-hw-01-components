@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import styles from './ProfileDescr.module.css';
 import defaultAvatar from './defaultAvatar.jpg';
 
