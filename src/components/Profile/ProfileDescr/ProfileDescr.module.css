@@ -1,10 +1,14 @@
 .description {
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .avatar {
-    width: 80%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #8b8b8b;
