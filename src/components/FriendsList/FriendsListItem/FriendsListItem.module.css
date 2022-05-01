@@ -4,8 +4,8 @@
     display: flex;
     align-items: center;
     border-radius: 10px;
-    background-color: #acacac;
-    box-shadow: 2px 3px 5px 0px #727272;
+    background-color: #fff;
+    box-shadow: 2px 3px 5px 0px #00000099;
 }
 
 .item:not(:last-child) {
@@ -18,16 +18,17 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.027);
 }
 
 .online {
     composes: status;
-    background-color: #3e8f3e;
+    background-color: rgb(53, 187, 35);
 }
 
 .offline {
     composes: status;
-    background-color: #c94b4b;
+    background-color: #d81919;
 }
 
 .avatar {

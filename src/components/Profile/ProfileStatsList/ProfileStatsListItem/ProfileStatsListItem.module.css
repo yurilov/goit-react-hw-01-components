@@ -2,12 +2,12 @@
     padding: 5px;
     flex-grow: 1;
     text-align: center;
-    border-top: 1px solid #8b8b8b;
+    border-top: 1px solid #000000;
     color: #363636;
 }
 
 .item:not(:last-child) {
-    border-right: 1px solid #8b8b8b;
+    border-right: 1px solid #000000;
 }
 
 .label {

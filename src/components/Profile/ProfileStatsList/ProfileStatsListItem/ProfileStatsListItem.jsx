@@ -4,7 +4,7 @@ import styles from './ProfileStatsListItem.module.css'
 
 function ProfileStatsListItem({ label, quantity = 0 }) {
     return (
-        <li>
+        <li className={styles.item}>
             <span className={styles.label}>{label}</span>
             <span className={styles.quantity}>{quantity}</span>
         </li>

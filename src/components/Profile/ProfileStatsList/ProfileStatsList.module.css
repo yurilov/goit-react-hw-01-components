@@ -1,6 +1,6 @@
 .stats {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    justify-content: space-around;
+    width: 100%;
     list-style: none;
 }
