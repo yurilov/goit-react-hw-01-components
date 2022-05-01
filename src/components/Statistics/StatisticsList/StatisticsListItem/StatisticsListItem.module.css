@@ -1,8 +1,8 @@
 .item {
     padding: 5px;
-    width: calc((300px) / 6);
+    width: calc((300px - 10px) / 5);
     text-align: center;
-    background-color: #dfdfdf;
+    background-color: #acacac;
     color: #363636;
 }
 
