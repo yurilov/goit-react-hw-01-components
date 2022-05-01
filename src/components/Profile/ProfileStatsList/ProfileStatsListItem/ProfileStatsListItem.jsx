@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './ProfileStatsListItem.module.css'
 
 function ProfileStatsListItem({ label, quantity = 0 }) {
@@ -12,8 +12,8 @@ function ProfileStatsListItem({ label, quantity = 0 }) {
 }
 
 ProfileStatsListItem.propTypes = {
-  label: propTypes.string.isRequired,
-  quantity: propTypes.number,
+  label: PropTypes.string.isRequired,
+  quantity: PropTypes.number,
 };
 
 export default ProfileStatsListItem

@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import StatisticsListItem from './StatisticsListItem/StatisticsListItem';
 import styles from './StatisticsList.module.css';
 
@@ -14,7 +14,7 @@ function StatisticsList({ data }) {
 }
 
 StatisticsList.propTypes = {
-  data: propTypes.arrayOf(propTypes.object),
+  data: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default StatisticsList;

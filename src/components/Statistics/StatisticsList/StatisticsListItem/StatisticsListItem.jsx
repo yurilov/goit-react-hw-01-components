@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './StatisticsListItem.module.css';
 
 function getRandomHexColor() {
@@ -21,8 +21,8 @@ function StatisticsListItem ({ label, percentage = 0 }) {
 };
 
 StatisticsListItem.propTypes = {
-  label: propTypes.string.isRequired,
-  percentage: propTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
 
 export default StatisticsListItem;

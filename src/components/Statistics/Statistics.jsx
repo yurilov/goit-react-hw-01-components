@@ -1,5 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 import StatisticsList from './StatisticsList/StatisticsList';
 
@@ -17,7 +17,7 @@ function Statistics({title, data}) {
 }
 
 Statistics.propTypes = {
-  title: propTypes.string,
+  title: PropTypes.string,
 };
 
 export default Statistics;
