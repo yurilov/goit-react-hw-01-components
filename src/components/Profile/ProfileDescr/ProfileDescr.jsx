@@ -15,7 +15,6 @@ function ProfileDescription({
             <p className={styles.name}>{username}</p>
             {tag && <p className={styles.tag}>@{tag}</p>}
             {location && <p className={styles.location}>@{location}</p>}
-
         </div>
     )
 }
