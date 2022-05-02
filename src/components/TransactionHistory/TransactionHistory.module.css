@@ -3,3 +3,52 @@
     border-collapse: collapse;
     font-size: 14px;
 }
+
+.tableHead {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+.tableData {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.tableRow {
+    background-color: #aca;
+    text-transform: capitalize;
+    color: #363636;
+}
+
+.tableRow:hover {
+    background-color: #adadad;
+}
+
+.tableRow:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.tableRow:nth-child(even):hover {
+    background-color: #bebebe;
+}
+
+.type {
+    composes: tableData;
+    padding-left: 20px;
+}
+
+.amount {
+    composes: tableData;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.currency {
+    composes: tableData;
+    text-align: center;
+}

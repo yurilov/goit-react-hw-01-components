@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import TransactionHistoryTableHead from './TransactionHistoryTableHead/TransactionHistoryTableHead';
-import TransactionHistoryTableBody from './TransactionHistoryTableBody/TransactionHistoryTableBody';
 import styles from './TransactionHistory.module.css';
 
 function TransactionHistory({ transactions }) {
@@ -11,15 +9,21 @@ function TransactionHistory({ transactions }) {
     <table className={styles.table}>
       <thead>
         <tr>
-          {headTitles.map(headTitle => (
-            <TransactionHistoryTableHead key={headTitle} title={headTitle} />
-          ))}
+          {headTitles.map(headTitle => { 
+            return <th key={headTitle} className={styles.tableHead}>{headTitle}</th>;
+          })}
         </tr>
       </thead>
       <tbody>
-        {transactions.map(({ id, type, amount, currency }) => (
-          <TransactionHistoryTableBody key={id} type={type} amount={amount} currency={currency} />
-        ))}
+        {transactions.map(({ id, type, amount, currency }) => {
+          return (
+            <tr key={id}className={styles.tableRow}>
+              <td className={styles.type}>{type}</td>
+              <td className={styles.amount}>{amount}</td>
+              <td className={styles.currency}>{currency}</td>
+            </tr>
+  );
+         })}
       </tbody>
     </table>
   );
